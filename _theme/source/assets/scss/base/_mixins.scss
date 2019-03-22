@@ -1,0 +1,31 @@
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin spacer-x($property, $left, $right) {
+	@if ($property == 'padding') {
+		padding-left: $left;
+		padding-right: $right;
+	} @else if ($property == 'margin') {
+		margin-left: $left;
+		margin-right: $right;
+	}
+}
+
+@mixin spacer-y($property, $top, $bottom) {
+	@if ($property == 'padding') {
+		padding-top: $top;
+		padding-bottom: $bottom;
+	} @else if ($property == 'margin') {
+		margin-top: $top;
+		margin-bottom: $bottom;
+	}
+}
+
+@mixin individual-border-radius($top-left, $top-right, $bottom-left, $bottom-right) {
+	border-top-left-radius: $top-left;
+	border-top-right-radius: $top-right;
+	border-bottom-left-radius: $bottom-left;
+	border-bottom-right-radius: $bottom-right;
+}

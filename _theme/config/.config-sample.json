@@ -1,0 +1,28 @@
+{
+	"dev": {
+		"php": "source/**/*.php",
+		"css": "source/assets/scss/_build/*.scss",
+		"cssAll": "source/assets/scss/**/*.scss",
+		"js": "source/assets/js/**/*.js",
+		"img": "source/assets/img/**/*.+(png|jpg|jpeg|gif|svg)",
+		"sprite": "source/assets/img/icon/*.+(png|jpg|jpeg|gif|svg)",
+		"fonts": "source/assets/fonts/*.*"
+	},
+
+	"build": {
+		"php": "../wp-content/themes/wp-quebrarosilencio/**/*.php",
+		"css": "../wp-content/themes/wp-quebrarosilencio/css/*.css",
+		"js": "../wp-content/themes/wp-quebrarosilencio/js/*.js",
+		"img": "../wp-content/themes/wp-quebrarosilencio/img/**/*.+(png|jpg|jpeg|gif|svg)",
+		"sprite": "source/assets/img/icon/*.+(png|jpg|jpeg|gif|svg)",
+		"fonts": "source/assets/fonts/*.*"
+	},
+
+	"destination": "../wp-content/themes/wp-quebrarosilencio/",
+
+	"bs": {
+		"proxy": "http://localhost/",
+		"port": "3000",
+		"browser": "firefox"
+	}
+}
